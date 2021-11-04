@@ -3,6 +3,7 @@ package com.lvivjavaclub.webapp.service;
 import java.time.LocalTime;
 import java.util.UUID;
 import lombok.RequiredArgsConstructor;
+import org.jobrunr.scheduling.BackgroundJob;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -27,5 +28,8 @@ public class MedicalCareService {
 
   public void notifyPatients() {
     System.out.println("TODO");
+  }
+
+  public void removeScheduledVaccination(String id) {
   }
 }

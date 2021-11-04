@@ -4,6 +4,7 @@ import com.lvivjavaclub.webapp.service.MedicalCareService;
 import java.time.LocalTime;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -32,5 +33,11 @@ public class VaccineController {
   public String newsletter() {
     medicalCareService.notifyPatients();
     return "DONE!";
+  }
+
+  @GetMapping("/appointment/{id}")
+  public String removeScheduledVaccination(@PathVariable String id) {
+    medicalCareService.removeScheduledVaccination(id);
+    return "REMOVED!";
   }
 }
