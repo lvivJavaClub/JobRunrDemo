@@ -35,7 +35,7 @@ out/
 atlassian-ide-plugin.xml
 
 #Maven
-target/**
+**/target/**
 .DS_Store
 **/.DS_Store
 *.log
