@@ -13,7 +13,7 @@ public class StorageConfig {
 
   @Bean
   public StorageProvider dataSource(JobMapper jobMapper) {
-    MongoDBStorageProvider storageProvider = new MongoDBStorageProvider("localhost", 27017);
+    var storageProvider = new MongoDBStorageProvider("localhost", 27017);
     storageProvider.setJobMapper(jobMapper);
     return storageProvider;
   }

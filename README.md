@@ -1,16 +1,16 @@
 # Lviv JavaClub: JobRunr Overview
 
-* Introduction
-* Supported Storage Types
-* Configuration
-* Enqueueing jobs
-* Scheduling jobs
-* Recurring jobs
-* Dashboard
-* Deleting jobs
-* Logging and Progress
-* Exceptions handling
-* Job Filters
+- [ ] Introduction
+- [ ] Dashboard
+- [ ] Configuration
+- [ ] Enqueueing jobs
+- [ ] Scheduling jobs
+- [ ] Recurring jobs
+- [ ] Deleting jobs
+- [ ] Advanced way to perform jobs
+- [ ] Logging and Progress
+- [ ] Exceptions handling and Retry
+- [ ] Job Filters
 
 ## Links
 

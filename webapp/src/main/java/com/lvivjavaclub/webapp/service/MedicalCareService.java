@@ -2,16 +2,14 @@ package com.lvivjavaclub.webapp.service;
 
 import java.time.LocalTime;
 import java.util.UUID;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 @Service
+@RequiredArgsConstructor
 public class MedicalCareService {
 
   private final VaccineDepartment vaccineDepartment;
-
-  public MedicalCareService(VaccineDepartment vaccineDepartment) {
-    this.vaccineDepartment = vaccineDepartment;
-  }
 
   public String vaccinatePersonNow(String userName) {
     vaccineDepartment.immediateVaccination(userName);
@@ -25,5 +23,9 @@ public class MedicalCareService {
 
   public String schedulePersonVaccination(String userName, LocalTime localTime) {
     return "Scheduled today at %s. Patient entry ID: %s".formatted(localTime, UUID.randomUUID().toString());
+  }
+
+  public void notifyPatients() {
+    System.out.println("TODO");
   }
 }
